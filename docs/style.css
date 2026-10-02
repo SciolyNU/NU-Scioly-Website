@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+nav a {
+  margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+  background-color: #260841;
+  color: #ffffff;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homebutton {
+    padding:  10px 10px;
+}
+
+.info-text {
+    width: 60%;
+}
+
+.exec_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttondiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+
+.exec_image {
+  max-width: 80%;
+  height: auto;
+}
+
+.exec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  max-width: 500px;
+  gap: 1em;
+  padding: 50px 0px;
+}
+
+.gradientdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 25px;
+  align-items: center;
+  border-radius: 1em;
+  background-image: linear-gradient(to bottom right,#4e2a84,#b6acd1);
+}
+
+.blackbutton {
+  background-color: black;
+}
+
+.blackbutton:hover {
+  background-color: white;
+  color: black;
+}
+
+.hide-mobile {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+button {
+  background-color: #937BA1;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #B6ACD1;
+}
+
+hr {
+  border: 2px solid white;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+div.nav_div{
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .info {
+      justify-content: center;
+  }
+
+  .home {
+      gap: 70px;
+      padding: 30px;
+      text-align: center;
+  }
+
+  .info-text {
+      text-align: center;
+      width: 100%;
+  }
+
+  h1 {
+      font-size: 2.5em;
+  }
+
+  h2 {
+      font-size: 2.0em;
+  }
+
+  h3 {
+      font-size: 1.5em;
+  }
+
+  a {
+      font-size: 1em;
+  }
+
+  .gradientdiv {
+      text-align: center;
+  }
+
+  .exec_image {
+      width: 60%;
+  }
+
+  .exec {
+      padding: 20px 0px;
+  }
+
+  .buttondiv {
+      gap: 30px;
+      justify-content: center;
+  }
+
+  .homebutton {
+      padding: 5px 5px;
+  }
+
+}
